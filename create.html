@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Corebase</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">CoreBase</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link active" href="create.html">Create customer</a>
+                    <a class="nav-item nav-link" href="#">Customer invoice</a>
+                    <a class="nav-item nav-link" href="#">Customer journals</a>
+                </div>
+            </div>
+        </nav>
+        <div class="row mt-5 mb-5">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <h3 class="text-center mt-5">Create Customer</h3>
+                <form id="createUser">
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">First Name</label>
+                        <input type="text" name="FNAME" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Last Name</label>
+                        <input type="text" name="LNAME" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Cellphone</label>
+                        <input type="text" name="CELLPHONE" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email</label>
+                        <input type="email" name="EMAIL" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Date of Birth</label>
+                        <input type="date" name="DOB" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Town</label>
+                        <select id="TOWN_CODE" name="TOWN_CODE" class="form-control">
+                            <option value="">--town--</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Gender</label>
+                        <select id="GENDER_CODE" name="GENDER_CODE" class="form-control">
+                            <option value="">--gender--</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Country</label>
+                        <select id="COUNTRY_CODE" name="COUNTRY_CODE" class="form-control">
+                            <option value="">--country--</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Credit Limit</label>
+                        <input type="text" name="CREDITLIMIT" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="">
+                    </div>
+                    <input type="hidden" name="USERNAME" value="swaleh">
+                    <div class="form-check">
+                        <input type="checkbox" name="BLOCKED" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Blocked</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">Submit</button>
+                </form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="js/create.js"></script>
+</body>
+
+</html>
